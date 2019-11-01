@@ -1,0 +1,16 @@
+{
+    "name": "NFC",
+    "version": "0.0.1",
+    "description": "這是專為micro:bit提供的NFC積木(This is the NFC blocks)",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "main.cpp",
+        "_locales/zh-tw/NFC-strings.json"
+    ],
+    "public": true
+}

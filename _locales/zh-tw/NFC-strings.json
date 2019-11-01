@@ -1,0 +1,6 @@
+{
+    "NFC.NFC_setSerial|block": "設定NFC的TX到 %pinTX| RX到 %pinRX",
+    "NFC.nfcEvent|block": "當偵測到RFID卡",
+    "NFC.getUID|block": "RFID卡號",
+    "NFC.detectedRFIDcard|block": "偵測到RFID卡？"
+}
