@@ -9,6 +9,9 @@ namespace NFC {
     let password = pins.createBuffer(6);
     let receivedBuffer = pins.createBuffer(25);
     let uid = pins.createBuffer(4);
+    let myRxPin=SerialPin.P14;
+    let myTxPin=SerialPin.P13;
+    let init=false;
     password[0] = 0xFF;
     password[1] = 0xFF;
     password[2] = 0xFF;
@@ -42,14 +45,16 @@ namespace NFC {
      * @param pinRX to pinRX ,eg: SerialPin.P14
     */
     //% weight=100
-    //% blockId="NFC_setSerial" block="set NFC TX to %pinTX| RX to %pinRX"
+    //% blockId="NFC_setSerial" block="set NFC TX to %pinTX | RX to %pinRX"
     export function NFC_setSerial(pinTX: SerialPin, pinRX: SerialPin): void {
-        basic.pause(10)
+        myRxPin=pinRX;
+        myTxPin=pinTX;
         serial.redirect(
             pinRX,
             pinTX,
             BaudRate.BaudRate115200
         )
+        init=true;
     }
 
     //% weight=90
@@ -157,7 +162,7 @@ namespace NFC {
 
 
     basic.forever(() => {
-        if (myNFCevent != null) {
+        if (init && (myNFCevent != null)) {
             if (detectedRFIDcard()) {
                 myNFCevent();
             }
