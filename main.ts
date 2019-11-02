@@ -2,7 +2,7 @@
 /**
  *NFC reader
  */
-//% weight=10 color=#1d8045 icon="\uf143" block="NFC"
+//% weight=10 color=#1d8045 icon="\uf0e7" block="NFC"
 namespace NFC {
     let myNFCevent: Action = null;
     let receivedLen = 0;
