@@ -2,7 +2,7 @@
 /**
  *NFC reader
  */
-//% weight=10 color=#999712 icon="\uf143" block="NFC"
+//% weight=10 color=#1d8045 icon="\uf143" block="NFC"
 namespace NFC {
     let myNFCevent: Action = null;
     let receivedLen = 0;
@@ -59,8 +59,8 @@ namespace NFC {
 
     //% weight=90
     //% blockId="nfcEvent" block="When RFID card is detected"
-    export function nfcEvent(a: Action) {
-        myNFCevent = a;
+    export function nfcEvent(tempAct: Action) {
+        myNFCevent = tempAct;
     }
 
     //% weight=80
