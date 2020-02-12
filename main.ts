@@ -57,6 +57,13 @@ namespace NFC {
         init=true;
     }
 
+    //% weight=95
+    //% blockId="NFC_disconnect" block="NFC disconnect"
+    export function NFC_disconnect(): void {
+        init=false;
+    }
+
+
     //% weight=90
     //% blockId="nfcEvent" block="When RFID card is detected"
     export function nfcEvent(tempAct: Action) {
