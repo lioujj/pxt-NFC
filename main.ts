@@ -63,6 +63,16 @@ namespace NFC {
         init=false;
     }
 
+    //% weight=94
+    //% blockId="NFC_reconnect" block="NFC reconnect"
+    export function NFC_reconnect(): void {
+        serial.redirect(
+            myRxPin,
+            myTxPin,
+            BaudRate.BaudRate115200
+        )
+        init=true;
+    }
 
     //% weight=90
     //% blockId="nfcEvent" block="When RFID card is detected"

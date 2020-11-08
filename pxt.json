@@ -12,7 +12,8 @@
         "main.cpp",
         "_locales/zh-tw/NFC-strings.json",
         "_locales/es-ES/NFC-strings.json",
-        "_locales/pt-PT/NFC-strings.json"
+        "_locales/pt-PT/NFC-strings.json",
+        "_locales/en/NFC-strings.json"
     ],
     "public": true
 }

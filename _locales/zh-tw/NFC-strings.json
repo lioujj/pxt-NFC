@@ -1,6 +1,7 @@
 {
     "NFC.NFC_setSerial|block": "設定NFC的TX連接到 %pinTX | RX連接到 %pinRX",
     "NFC.NFC_disconnect|block": "NFC中斷連線",
+    "NFC.NFC_reconnect|block": "NFC重新連線",
     "NFC.nfcEvent|block": "當偵測到RFID卡",
     "NFC.getUID|block": "RFID卡號",
     "NFC.detectedRFIDcard|block": "偵測到RFID卡？"

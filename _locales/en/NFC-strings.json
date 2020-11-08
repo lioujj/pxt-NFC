@@ -1,0 +1,8 @@
+{
+    "NFC.NFC_setSerial|block": "set NFC TX to %pinTX | RX to %pinRX",
+    "NFC.NFC_disconnect|block": "NFC disconnect",
+    "NFC.NFC_reconnect|block": "NFC reconnect",
+    "NFC.nfcEvent|block": "When RFID card is detected",
+    "NFC.getUID|block": "RFID UID string",
+    "NFC.detectedRFIDcard|block": "Detected RFID card?"
+}
